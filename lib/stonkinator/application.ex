@@ -14,9 +14,10 @@ defmodule Stonkinator.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Stonkinator.PubSub},
       # Start the Endpoint (http/https)
-      StonkinatorWeb.Endpoint
+      StonkinatorWeb.Endpoint,
       # Start a worker by calling: Stonkinator.Worker.start_link(arg)
       # {Stonkinator.Worker, arg}
+      {Stonkinator.OrderProcessor, name: Stonkinator.OrderProcessor}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
