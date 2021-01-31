@@ -14,5 +14,5 @@
 
 </ul>
 
-<span><%= link "Edit", to: Routes.order_path(@conn, :edit, @order) %></span>
-<span><%= link "Back", to: Routes.order_path(@conn, :index) %></span>
+<span><%= link "Edit", to: Routes.order_admin_path(@conn, :edit, @order) %></span>
+<span><%= link "Back", to: Routes.order_admin_path(@conn, :index) %></span>
