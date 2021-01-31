@@ -19,6 +19,7 @@ defmodule StonkinatorWeb.Router do
     get "/", PageController, :index
 
     resources "/order_admin", OrderAdminController
+    resources "/orders", OrderController
   end
 
   # Other scopes may use custom stacks.
